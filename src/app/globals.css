@@ -29,7 +29,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: blueviolet;
+  background-color: var(--bg);
 }
 @media (max-width: 1536px) {
   .container {
