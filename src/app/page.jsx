@@ -1,8 +1,28 @@
+import Image from "next/image";
+import styles from "./home.module.css";
+
 const Home = () => {
   return (
-    <div>
-      <h1>Home</h1>
-      <p>Welcome to my website!</p>
+    <div className={styles.container}>
+      <div className={styles.textContainer}>
+        <div className={styles.textContainer}>
+          <h1 className={styles.title}>Creative Thoughts Agency.</h1>
+          <p className={styles.desc}>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero
+            blanditiis adipisci minima reiciendis a autem assumenda dolore.
+          </p>
+          <div className={styles.buttons}>
+            <button className={styles.button}>Learn More</button>
+            <button className={styles.button}>Contact</button>
+          </div>
+          <div className={styles.brands}>
+            <Image src="/brands.png" alt="" fill className={styles.brandImg} />
+          </div>
+        </div>
+      </div>
+      <div className={styles.imageContainer}>
+        <Image src="/hero.gif" className={styles.heroImg} alt="" fill />
+      </div>
     </div>
   );
 };
